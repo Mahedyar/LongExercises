@@ -21,8 +21,9 @@ const letterChanger = (firstString) => {
 
     let secondString = firstString[firstString.length-1] + firstString.substring(0 , firstString.length-1)
     let newstring = ""
+    console.log(firstString.length)
 
-    for (let i =0 ; i <= secondString.length ; i++){
+    for (let i =0 ; i < secondString.length ; i++){
 
         if (secondString.charCodeAt(i) === 122) {
             // 122 is the charcode of z
@@ -50,7 +51,7 @@ const password = (k , string) => {
 }
 
 
-console.log(password(2,"abz"))
+console.log(password(4,"abz"))
 
 ////////////////////////////////// Subasa Exercise //////////////
 
