@@ -13,7 +13,41 @@ function arz (n , a,b ,c ,aPrice , bPrice , cPrice) {
         }
     } return count
 }
-console.log(arz(32000, 2 , 1, 1 , 4200, 7500 , 3600))
+// console.log(arz(32000, 2 , 1, 1 , 4200, 7500 , 3600))
 
+////////////////////////////////password exercise ///////////////////////////////
 
+const letterChanger = (firstString) => {
+
+    let secondString = firstString[firstString.length-1] + firstString.substring(0 , firstString.length-1)
+    let newstring = ""
+
+    for (let i =0 ; i <= secondString.length ; i++){
+
+        if (secondString.charCodeAt(i) === 122) {
+            // 122 is the charcode of z
+            newstring = newstring + "a"
+
+        }else {
+            newstring = newstring + String.fromCharCode(secondString.charCodeAt(i)+1)
+        }
+
+    }
+    return newstring
+
+}
+
+const password = (k , string) => {
+   let result = ""
+    for (let j =0 ; j<k ; j++) {
+        result = letterChanger(string)
+        string = result
+    }return string
+
+}
+
+// console.log(letterChanger("dbc"))
+// console.log(password(2,"abz"))
+
+////////////////////////////////// Subasa Exercise //////////////
 
