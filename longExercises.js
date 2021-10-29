@@ -38,16 +38,19 @@ const letterChanger = (firstString) => {
 }
 
 const password = (k , string) => {
-   let result = ""
+    let result = ""
+
     for (let j =0 ; j<k ; j++) {
         result = letterChanger(string)
         string = result
-    }return string
+
+    }
+    return result
 
 }
 
-// console.log(letterChanger("dbc"))
-// console.log(password(2,"abz"))
+
+console.log(password(2,"abz"))
 
 ////////////////////////////////// Subasa Exercise //////////////
 
@@ -108,4 +111,4 @@ function subasa (n , firstMinutes, secondMinutes , goals) {
 
 }
 
-subasa(6, 3, 2, [8,48,45,70 , 81 , 94 ])
+// subasa(6, 3, 2, [8,48,45,70 , 81 , 94 ])
